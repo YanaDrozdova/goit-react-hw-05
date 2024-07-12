@@ -1,0 +1,20 @@
+.container {
+    border-bottom: 1px solid rgb(80, 78, 78);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    padding-left: 24px;
+}
+
+.link {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.active {
+    color: orangered;
+}
