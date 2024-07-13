@@ -11,11 +11,6 @@ const options = {
   },
 };
 
-// fetch('https://api.themoviedb.org/3/authentication', options)
-//   .then(response => response.json())
-//   .then(response => console.log(response))
-//   .catch(err => console.error(err));
-
 export async function getMovies() {
   const response = await axios.get('trending/movie/day', options);
   return response.data;
@@ -23,5 +18,10 @@ export async function getMovies() {
 
 export async function getMovieById(movieId) {
   const response = await axios.get(`/movie/${movieId}`, options);
+  return response.data;
+}
+
+export async function getMovieCastById(movieId) {
+  const response = await axios.get(`movie/${movieId}/credits`, options);
   return response.data;
 }

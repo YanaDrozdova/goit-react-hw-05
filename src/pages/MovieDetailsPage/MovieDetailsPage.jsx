@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link, Outlet, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { HiArrowSmLeft } from 'react-icons/hi';
 import { getMovieById } from '../../../movies-api';
@@ -60,13 +60,15 @@ export default function MovieDetailsPage() {
         <p>Additional information</p>
         <ul>
           <li>
-            <Link>Cast</Link>
+            <Link to="cast">Cast</Link>
           </li>
           <li>
-            <Link>Reviews</Link>
+            <Link to="reviews">Reviews</Link>
           </li>
         </ul>
       </div>
+
+      <Outlet />
     </div>
   );
 }
