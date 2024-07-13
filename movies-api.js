@@ -20,3 +20,8 @@ export async function getMovies() {
   const response = await axios.get('trending/movie/day', options);
   return response.data;
 }
+
+export async function getMovieById(movieId) {
+  const response = await axios.get(`/movie/${movieId}`, options);
+  return response.data;
+}

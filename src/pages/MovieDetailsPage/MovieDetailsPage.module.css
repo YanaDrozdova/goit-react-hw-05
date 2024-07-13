@@ -1,0 +1,69 @@
+.container {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container a {
+    display: flex;
+    align-items: center;
+}
+
+.container a svg {
+    margin-right: 6px;
+}
+
+.movieInfo {
+    display: flex;
+    gap: 24px;
+}
+
+.pictureBox {
+    width: 500px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.textBox {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.title {
+    margin-bottom: 12px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.addInfo ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 12px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.addInfo {
+    padding: 8px;
+    margin-top: 12px;
+}
+
+.addInfo a {
+    text-decoration: underline;
+    /* Підкреслення тексту */
+    color: inherit;
+    /* Спадкування кольору тексту */
+}
+
+.addInfo a:hover {
+    text-decoration: none;
+    /* Зняття підкреслення при наведенні */
+}
