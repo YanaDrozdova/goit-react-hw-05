@@ -11,9 +11,19 @@ const options = {
   },
 };
 
-export async function getMovies() {
+export async function getTrendMovies() {
   const response = await axios.get('trending/movie/day', options);
-  return response.data;
+  return response.data.results;
+}
+
+export async function getMoviesByTitle(title) {
+  const response = await axios.get('search/movie', {
+    ...options,
+    params: {
+      query: title,
+    },
+  });
+  return response.data.results;
 }
 
 export async function getMovieById(movieId) {
@@ -23,5 +33,10 @@ export async function getMovieById(movieId) {
 
 export async function getMovieCastById(movieId) {
   const response = await axios.get(`movie/${movieId}/credits`, options);
+  return response.data;
+}
+
+export async function getReviewsById(movieId) {
+  const response = await axios.get(`movie/${movieId}/reviews`, options);
   return response.data;
 }

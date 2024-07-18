@@ -56,14 +56,11 @@
     margin-top: 12px;
 }
 
-.addInfo a {
+.link {
     text-decoration: underline;
-    /* Підкреслення тексту */
     color: inherit;
-    /* Спадкування кольору тексту */
 }
 
-.addInfo a:hover {
-    text-decoration: none;
-    /* Зняття підкреслення при наведенні */
+.active {
+    color: orangered;
 }

@@ -1,0 +1,51 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    width: calc((100% - 5 *8px)/6);
+    border: 1px solid rgb(136, 130, 130);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+    padding: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Додає тінь */
+    transition: box-shadow 0.3s;
+    /* Плавний перехід для тіні */
+}
+
+.item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    /* Посилена тінь при наведенні */
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.actorInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.info {
+    display: flex;
+    gap: 4px;
+}
