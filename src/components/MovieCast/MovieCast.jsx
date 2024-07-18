@@ -27,6 +27,12 @@ export default function MovieCast() {
     return <p>Loading...</p>;
   }
 
+  if (cast.length === 0) {
+    return (
+      <p>Sorry, we dont have any information about the cast for this movie.</p>
+    );
+  }
+
   return (
     <div className={css.container}>
       <ul className={css.list}>
